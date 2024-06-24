@@ -393,67 +393,22 @@ a:hover::after {
   width: 100%;
 }
 
-/* Desktop */
-@media (min-width: 1920px) {
+@media (min-width: 992px) and (max-width: 1920px) {
   .container-topo {
-    width: 1920px;
+    text-align: center;
   }
-  .modules {
-    flex-wrap: nowrap;
-  }
-  .module {
-    width: 30%;
-  }
-  .cta-steps {
-    flex-wrap: nowrap;
-  }
-  .cta-step {
-    margin-right: 30px;
-  }
-  .about {
-    flex-wrap: nowrap;
-  }
-  .about-item {
-    width: 30%;
-  }
-}
-
-/* Laptop */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .container-topo {
-    width: 992px;
-  }
-  .modules {
-    flex-wrap: wrap;
-  }
-  .module {
-    width: 40%;
-  }
-  .cta-steps {
-    flex-wrap: wrap;
-  }
-  .cta-step {
-    margin-right: 20px;
-  }
-  .about {
-    flex-wrap: wrap;
-  }
-  .about-item {
-    width: 40%;
+  .footer {
+    align-items: center;
+    justify-content: center;
   }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-  .container-topo {
-    max-width: 768px;
-  }
   .modules {
     flex-wrap: wrap;
   }
-  .module {
-    width: 50%;
-  }
+
   .cta-steps {
     flex-wrap: wrap;
   }
@@ -464,14 +419,25 @@ a:hover::after {
     flex-wrap: wrap;
   }
   .about-item {
-    width: 50%;
+    width: 100%;
+    margin: 3em;
+  }
+  .footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer-link {
+    display: block;
+    text-align: center;
   }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
   .container-topo {
-    width: 100%;
+    margin: 2em 2em;
+    text-align: center;
     flex-direction: column;
   }
   .cta-button {
@@ -494,6 +460,14 @@ a:hover::after {
     width: 100%;
     margin-top: 30px;
   }
+
+  .cta-title {
+    width: 100%;
+  }
+
+  .maior {
+    margin: 2em 2em;
+  }
   .cta-steps {
     flex-wrap: wrap;
   }
@@ -506,13 +480,13 @@ a:hover::after {
     flex-wrap: wrap;
   }
   .about-item {
-    width: 100%;
+    width: 80vw;
     margin: 20px;
     align-items: center;
   }
 
   .about-main {
-    width: 100%;
+    width: 85vw;
   }
 
   .footer {
@@ -520,4 +494,8 @@ a:hover::after {
     flex-direction: column;
   }
 
+  .footer-link {
+    display: block;
+    text-align: center;
+  }
 }
